@@ -1,5 +1,7 @@
 import React from 'react'
 import netflix from './images/netflix.jpg'
+import info from '../components/images/info.png'
+import play from '../components/images/play.png'
 import './Banner.css'
 
 const Banner = ({upcomig}) => {
@@ -32,7 +34,7 @@ const Banner = ({upcomig}) => {
  
 
     return (
-            <div className=' flex flex-row '>
+            <div className=' flex flex-row bg '>
 
              
           {/* <div className=' bg-black w-[100%]  flex flex-row justify-center items-center  text-white ' >
@@ -64,9 +66,9 @@ const Banner = ({upcomig}) => {
         <div className=' bg-black opacity-90   banner flex flex-row justify-start h-[600px] w-[100%]  bg-top  bg-cover  bg-no-repeat'  style={{ backgroundImage:`url( ${`https://image.tmdb.org/t/p/original/${data}`} )` }}  >
 
           
-          <div className=' text-white  flex flex-col flex-wrap justify-center h-[80vh] w-[500px] p-10  ' >
+          <div className=' text-white  flex flex-col flex-wrap justify-center items-start h-[80vh] w-[500px] p-10  ' >
             
-            <div className=' h-[100vh] flex flex-col flex-wrap justify-center gap-6 ' >
+            <div className=' h-[100vh] flex flex-col flex-wrap justify-start gap-6 ' >
 
 
               <h1 className='text-6xl font-bold' > {Movie_title} </h1>
@@ -74,11 +76,11 @@ const Banner = ({upcomig}) => {
               <h2 className='text-xl font-bold' >Trending in movies | Released- {Movie_relesedate} </h2>
 
               
-              <p className='text-base flex-wrap' > { Movie_description}</p>
+              <p className='text-base flex-wrap  ' > { Movie_description}</p>
 
               <div className=' flex flex-row gap-4  ' >
-                <button className=' bg-slate-50 text-black h-10 w-24 text-xl rounded-sm ' >Play</button>
-                <button className=' bg-transparent  text-white  hover:bg-gray-400  hover:text-black h-10 w-24 text-xl rounded-sm ' > More Info</button>
+                <button className=' bg-slate-50 text-black h-10 w-24 gap-1 text-xl flex justify-center items-center rounded-sm'> <img src={play} className='h-7' alt="" />  Play</button>
+                <button className=' bg-slate-600 text-white h-10 w-32 gap-1 font-bold text-lg flex justify-center items-center rounded-sm'> <img src={info} className='h-7' alt="" />   More Info</button>
                </div>
                
 
@@ -88,7 +90,7 @@ const Banner = ({upcomig}) => {
 
 
 
-            </div>
+        </div>
 
 
         </div>

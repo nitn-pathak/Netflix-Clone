@@ -110,7 +110,7 @@ const Home = () => {
              <Banner upcomig={upcomig} /> 
                        
              
-            <Row title={"Upcoming Movies"} upcomig={upcomig} />
+             <Row title={"Upcoming Movies"} upcomig={upcomig} />
               <Row title={"Popular"} upcomig={popular} />
               <Row title={"Now Playing"}   upcomig={nowplayingMovie} />
               <Row title={"Tv Shows"}   upcomig={tvshows} />

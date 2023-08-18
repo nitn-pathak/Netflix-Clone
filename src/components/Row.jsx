@@ -1,5 +1,6 @@
 import React from 'react'
 import av from './images/av.jpg'
+
 import './Row.css'
 
 const Row = ({upcomig, title }) => {
@@ -16,12 +17,12 @@ const Row = ({upcomig, title }) => {
              
         
         
-          <h2 className='ml-10 p-2 font-bold  text-white text-2xl'>  {title}   </h2>
+          <h2 className=' p-2 font-bold  text-white text-2xl '> {title}   </h2>
           
                 
             
                 {/* card */}            
-          <div className=' content-div  z-10 h-[290px] items-center flex flex-row  gap-10 px-10   overflow-x-scroll overflow-y-hidden  '  >
+          <div className=' content-div z-10 h-[290px] items-center flex flex-row  gap-10    overflow-x-scroll overflow-y-hidden  '  >
                     
                         { 
                     

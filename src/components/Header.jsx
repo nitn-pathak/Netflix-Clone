@@ -6,28 +6,32 @@ import  search from './images/search.jpg'
 const Header = () => {
     return (
       
-        <div className='text-white '>
+      <div className='text-white   '>
 
             
               {/* Navbar */}
-            <nav className='flex flex-row items-center justify-between bg-black px-10  '>
+            <nav className='flex flex-row items-center justify-between px-2 bg-black w-[100%] '>
             
-                <div className='flex flex-row  items-center gap-10 ' >
+                <div className='flex flex-row  items-center  gap-10  ' >
 
-                <img className=' h-20 w-32 '   src={netflixlogo} alt="" />
+                <img className='h-14 w-28  '   src={netflixlogo} alt="" />
 
-                 <Link to='/'> HOME </Link>
-                 <Link to='tvshows'> TVSHOWS </Link>
-                 <Link to='movies'> MOVIES</Link>
-                    <Link to='new&popular'> NEW & POPULER </Link>
+                   <div className='hidden lg:block  ' >
+                   <Link className=' mr-5' to='/'> HOME </Link>
+                  <Link className=' mr-5' to='tvshows'> TVSHOWS </Link>
+                  <Link className=' mr-5' to='movies'> MOVIES</Link>
+                  <Link className=' mr-5' to='new&popular'> NEW & POPULER </Link>
+                 </div>
 
                   
                 </div>
                 
-                  <div className='' >
+                  <div className='flex gap-2'>
 
+                      <img src={ search} className=' h-5 w-5' alt="" />
+                        {/* <img src={ search} className=' h-7 w-7' alt="" />
                       <img src={ search} className=' h-7 w-7' alt="" />
-
+  */}
 
                     </div>
 
